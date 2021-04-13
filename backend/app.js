@@ -4,23 +4,23 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 const app = express()
-const userRoutes = require('./backend/routes/user')
+const userRoutes = require('./routes/users')
 
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb+srv://sahilkanojia:'+
-    process.env.Mongo_Atlas_PW +
-    '@cluster0-szcya.mongodb.net/test?retryWrites=true',
-
-    {
-        useMongoClient : true,
-        useFindAndModify : false,
-        useCreateIndex: true ,
-        useNewUrlParser: true
-    })
+// mongoose.connect('mongodb+srv://sahilkanojia:'+
+//     'Softwareji' +
+//     '@cluster0-szcya.mongodb.net/test?retryWrites=true',
+//
+//     {
+//         useMongoClient : true,
+//         useFindAndModify : false,
+//         useCreateIndex: true ,
+//         useNewUrlParser: true
+//     })
 
 
 

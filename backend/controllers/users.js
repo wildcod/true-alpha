@@ -1,7 +1,7 @@
-const mongoose = require('mongoose')
-const User = require('../models/user')
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const mongoose = require('mongoose');
+const User = require('../models/user');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 
 const signup = (req, res, next) => {
@@ -37,6 +37,7 @@ const signup = (req, res, next) => {
 }
 
 const getUsers = (req, res, next) => {
+    console.log('Users')
     User.find()
         .select("_id name email")
         .populate('students')
@@ -57,7 +58,6 @@ const getUsers = (req, res, next) => {
 
 const login = (req, res, next) => {
     User.find({ email : req.body.email})
-        .populate('students','status submit_date_and_include joining_date _id name class_name')
         .exec()
         .then(user => {
             if(user.length < 1){
