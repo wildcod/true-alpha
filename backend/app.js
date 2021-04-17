@@ -5,22 +5,24 @@ const mongoose = require('mongoose')
 
 const app = express()
 const userRoutes = require('./routes/users')
+const forumRoutes = require('./routes/forums')
+const postsRoutes = require('./routes/posts')
 
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json())
 
-// mongoose.connect('mongodb+srv://sahilkanojia:'+
-//     'Softwareji' +
-//     '@cluster0-szcya.mongodb.net/test?retryWrites=true',
-//
-//     {
-//         useMongoClient : true,
-//         useFindAndModify : false,
-//         useCreateIndex: true ,
-//         useNewUrlParser: true
-//     })
+mongoose.connect('mongodb+srv://sahilkanojia:'+
+    'Softwareji' +
+    '@cluster0-szcya.mongodb.net/test?retryWrites=true',
+
+    {
+        useMongoClient : true,
+        useFindAndModify : false,
+        useCreateIndex: true ,
+        useNewUrlParser: true
+    })
 
 
 
@@ -38,7 +40,9 @@ app.use((req,res,next) => {
     next();
 })
 
-app.use('/users', userRoutes)
+app.use('/users', userRoutes);
+app.use('/forums', forumRoutes);
+app.use('/posts', postsRoutes);
 
 
 // for routes not found

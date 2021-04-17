@@ -9,7 +9,7 @@ const getUsers = require('../controllers/users').getUsers
 
 router.post('/signup', signup)
 router.post('/login', login)
-router.get('/',checkAuth, getUsers)
+router.get('/', checkAuth, getUsers)
 
 
 module.exports = router

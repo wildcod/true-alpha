@@ -40,7 +40,6 @@ const getUsers = (req, res, next) => {
     console.log('Users')
     User.find()
         .select("_id name email")
-        .populate('students')
         .exec()
         .then(users => {
             const count = users.length
