@@ -58,8 +58,26 @@ const getPostById = (req, res, next) => {
         })
 };
 
+const removePostById = (req, res, next) => {
+    Post.remove({ _id : req.params.postId},
+    )
+        .exec()
+        .then(result => {
+            res.status(200).json({
+                message : "post deleted",
+                result
+            })
+        })
+        .catch(err => {
+            res.status(500).json({
+                error : err
+            })
+        })
+};
+
 module.exports = {
     createPost,
     getPosts,
-    getPostById
+    getPostById,
+    removePostById
 }

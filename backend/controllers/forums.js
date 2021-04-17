@@ -85,13 +85,13 @@ const removeUser = (req, res, next) => {
     Forum.findOneAndUpdate(
         {_id : req.body.forumId},
         {
-            $push : { 'users' : req.body.userId },
+            $pull : { 'users' : req.body.userId },
         },
         {new : true}
     ).exec()
         .then(result => {
             res.status(200).json({
-                message : "User Added",
+                message : "User Remove",
                 result
             })
         })
