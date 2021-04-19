@@ -1,0 +1,36 @@
+.forumcontainer{
+    width: 70%;
+    margin: 0px auto;
+    /* display: flex; */
+   
+}
+.cardcontainer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.card{
+    border: 1px #F3F3F3 solid;
+    padding: 1em;
+    width:25%
+
+}
+.cardtitle{
+    font-size: 18px;
+}
+
+.cardpara{
+    font-size: 14px;
+    
+}
+
+
+.bgblue{
+    background-color: #037AFB;
+    color: #F3F3F3;
+    padding: 10px 10px;
+     border: none;
+     border-radius: 3px;
+     margin: 3px;
+}

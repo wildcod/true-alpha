@@ -1,0 +1,29 @@
+.folio{
+    width: 70%;
+    margin: 0px auto;
+   
+}
+
+
+.table {
+    font-family:  sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #F8F9FA;
+  }
+  
+  .td{
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+.widthten{
+    width: 9px;
+    background-color: aqua;
+}
+
+.widthtr{
+    width: 30px;
+    border-bottom: 1px solid #dddddd!important;
+}
