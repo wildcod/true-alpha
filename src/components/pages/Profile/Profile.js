@@ -11,7 +11,7 @@ export default function Profile() {
     })
     const [socialInfo, setsocialInfo] = useState({
         rank: "Beginer",
-        Phone:"006 354522",
+        Phone: "006354522",
         mail:  "njacon@gmail.com",
         Facebook: "David Grey",
         Twitter: "@davidgrey"

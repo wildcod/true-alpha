@@ -9,14 +9,16 @@ import Homepage from './components/pages/homepage/Homepage';
 import { Route, Router, Switch } from "react-router-dom";
 import Allforum from './components/pages/allforum/Allforum';
 import Leaderboard from './components/pages/Leaderboard/Leaderboard';
+import Modals from './components/pages/modals/Modals';
 
 function App() {
   return (
     <div className="App">
 
-      
       <Navbar />
       <Allforum />
+      <Modals />
+
       <Switch>
       <Route path="/portfolio" exact component={Portfolio} />
       <Route path="/profile" exact component={Profile} />
