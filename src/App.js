@@ -17,8 +17,6 @@ function App() {
       
       <Navbar />
       <Allforum />
-      {/* <Profile /> */}
-      {/* <Portfolio /> */}
       <Switch>
       <Route path="/portfolio" exact component={Portfolio} />
       <Route path="/profile" exact component={Profile} />
@@ -26,9 +24,6 @@ function App() {
       <Route path="/homepage" exact component={Homepage} />
       <Route path='/leader' exact component={Leaderboard} />
       </Switch>
-     {/* <Leaderboard /> */}
-      {/* <Forum /> */}
-      {/* <Homepage /> */}
     </div>
   );
 }

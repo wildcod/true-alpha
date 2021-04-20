@@ -37,8 +37,18 @@
 }
 
 .iconContainer{
-    width: 15%;
-    
+    /* height: 50%; */
+    width:15%;
+    border-radius: 10%;
+}
+.icondiv{
+    width: 30%;
+    background-color:#E3E3E3;
+    border-radius: 10%;
+    margin: 1em  auto;
+    /* margin-left: 1em ; */
+    padding: 0.8em;
+
 }
 .forum{
     width: 30%;
@@ -46,19 +56,19 @@
 .topics{
    width: 12%;
    text-align: center;
-   color: #E3E3E3;
+   color: #a7a5a5;
 
 } 
 .posts{
     width: 12%;
-    color: #E3E3E3;
+    color: #a7a5a5;
     text-align: center;
 
 }
 .fresshness{
     width: 20%;
     text-align: center;
-    color: #E3E3E3;
+    color: #a7a5a5;
 }
 .formcontentpara{
     font-size: 14px;
@@ -99,7 +109,11 @@
     border: #E3E3E3 1px solid;
     width: 95%;
     margin: .5em auto ;
-
+}
+.underlinetwo{
+    border: #E3E3E3 1px solid;
+    width: 95%;
+    margin: .1em auto;
 }
 
 .search{
@@ -122,6 +136,7 @@ color: #E3E3E3;
      border-radius: 1em;
      border: #E3E3E3 1px solid;
      padding: .6em 1rem;
+     outline: none;
  }
  .lists{
     margin: .5em;
@@ -132,4 +147,18 @@ color: #E3E3E3;
      width: 20px;
      margin-right: 1em;
      color: #9767dd;
+ }
+ /* .stline{
+
+     height: 100%;
+     border: #a7a5a5 1px solid;
+ } */
+ .topicscontainer{
+     border-right: solid #E3E3E3 1px;
+ }
+
+ .lefticon{     
+     width: 1.5em;
+    align-items: center;
+    text-align: center;
  }
