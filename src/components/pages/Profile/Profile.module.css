@@ -1,0 +1,63 @@
+.profileoutercontainer{
+     width: 70%;
+     margin: 0px auto;
+    
+}
+
+.container{
+    border: 2px #F3F3F3 solid;
+
+}
+
+.innercontainer{
+    border-radius: 2px;
+    padding: 2ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upperdetails{
+    text-align: center;
+}
+.upperdetails img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.bggreen{
+    background-color: #55A846;
+    color: #F3F3F3;
+    padding: 10px 10px;
+     border: none;
+     border-radius: 3px;
+     margin: 3px;
+}
+
+
+.underline{
+    width: 90%;
+    margin: 60px auto;
+    border: 1px #F3F3F3 solid;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.fieldname{
+    margin: 10px 15px ;
+}
+
+.blkcolor{
+    color: #595370;
+    font-weight: 400;
+}
+.bluecolor{
+    color: #6CA5FC;
+    font-weight: 400;
+
+}

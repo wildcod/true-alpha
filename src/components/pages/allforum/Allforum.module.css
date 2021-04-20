@@ -1,0 +1,164 @@
+.allforumcontainer{
+    display: flex;
+   
+}
+
+.topicscontainer{
+    width: 70%;
+   margin: 1rem auto;
+}
+.recenttopics{
+   width:30%;
+   margin: 2rem;
+   padding: 3rem;
+   border-radius: 1em;
+   background-color: #F9F8FD;
+}
+.rtopictitle{
+    font-weight: 500;
+    font-size: 24px;
+    /* padding-bottom: .5em; */
+}
+.runderline{
+    width: 25%;
+    border-bottom: #9767dd 3px solid;
+    border-radius: 1em;
+    margin:  0.7em 0px;
+}
+.cardcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    display: flex;
+    padding: 1em;
+}
+
+.iconContainer{
+    /* height: 50%; */
+    width:15%;
+    border-radius: 10%;
+}
+.icondiv{
+    width: 30%;
+    background-color:#E3E3E3;
+    border-radius: 10%;
+    margin: 1em  auto;
+    /* margin-left: 1em ; */
+    padding: 0.8em;
+
+}
+.forum{
+    width: 30%;
+}
+.topics{
+   width: 12%;
+   text-align: center;
+   color: #a7a5a5;
+
+} 
+.posts{
+    width: 12%;
+    color: #a7a5a5;
+    text-align: center;
+
+}
+.fresshness{
+    width: 20%;
+    text-align: center;
+    color: #a7a5a5;
+}
+.formcontentpara{
+    font-size: 14px;
+
+}
+.posttitle{
+    font-weight: 500;
+    font-size: large;
+}
+.readmore{
+    padding-top: .3em;
+}
+.readmorelink{
+
+    color: #9767dd;
+}
+
+/* icon */
+.iconContainer.i{
+    width: 50px;
+    /* height: 20%; */
+    text-align: center;
+    /* padding: 2em auto; */
+
+}
+
+
+.headingitem{
+    padding: .3em 1em;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.headingcontainer{
+    padding: 1rem;
+}
+
+.underline{
+    border: #E3E3E3 1px solid;
+    width: 95%;
+    margin: .5em auto ;
+}
+.underlinetwo{
+    border: #E3E3E3 1px solid;
+    width: 95%;
+    margin: .1em auto;
+}
+
+.search{
+    padding: 6px 16px;
+    height: rem;
+ }
+ .searchicon{
+    width: 40px;
+    border-radius: 50%;
+    background-color: #9767dd;
+    padding: .4em;
+    margin-left: 1em ;
+ }
+ span.searchicon i{
+color: #E3E3E3;
+
+ }
+ 
+ .nav_search{
+     border-radius: 1em;
+     border: #E3E3E3 1px solid;
+     padding: .6em 1rem;
+     outline: none;
+ }
+ .lists{
+    margin: .5em;
+ }
+ .secicon{
+     /* height: 20px; */
+     display: inline;
+     width: 20px;
+     margin-right: 1em;
+     color: #9767dd;
+ }
+ /* .stline{
+
+     height: 100%;
+     border: #a7a5a5 1px solid;
+ } */
+ .topicscontainer{
+     border-right: solid #E3E3E3 1px;
+ }
+
+ .lefticon{     
+     width: 1.5em;
+    align-items: center;
+    text-align: center;
+ }

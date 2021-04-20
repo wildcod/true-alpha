@@ -1,0 +1,25 @@
+.folio{
+    width: 70%;
+    margin: 0px auto;
+   
+}
+.container{
+    border: 2px #F3F3F3 solid;
+    padding: 10px;
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .th, .td {
+    padding: 12px 8px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .firstcol{
+    width: 50%;
+  }
+
