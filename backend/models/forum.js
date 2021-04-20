@@ -29,7 +29,10 @@ const forumSchema = mongoose.Schema({
     }],
     admin_id : [{
         type: mongoose.Schema.Types.ObjectId
-    }]
+    }],
+    investment_club_id : {
+        type: mongoose.Schema.Types.ObjectId
+    }
 })
 
 module.exports = mongoose.model('Forum' ,forumSchema)

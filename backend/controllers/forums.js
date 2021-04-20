@@ -11,8 +11,9 @@ const createForum = (req, res, next) => {
         description : forumDetails.description,
         isPrivate : forumDetails.isPrivate,
         created_at: new Date(forumDetails.createdAt),
-        admin_id: [forumDetails.userId]
-    })
+        admin_id: [forumDetails.userId],
+        investment_club_id: forumDetails.investmentClubId
+    });
 
     forum.save()
         .then(forum => {

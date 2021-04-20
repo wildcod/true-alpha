@@ -75,9 +75,40 @@ const removePostById = (req, res, next) => {
         })
 };
 
+const upVotePost = (req, res, next) => {
+    Post.findById({ _id : req.body.postId})
+        .exec()
+        .then(result => {
+            Post.findOneAndUpdate(
+                { _id : req.body.postId },
+                { $set : { up_vote_count: result?.up_vote_count + 1 } },
+                { new : true}
+            ).exec()
+                .then(result => {
+                    res.status(200).json({
+                        message : "Post Upvoted",
+                        request : {
+                            result
+                        }
+                    })
+                })
+                .catch(err => {
+                    res.status(500).json({
+                        error : err
+                    })
+                })
+        })
+        .catch(err => {
+            res.status(500).json({
+                error : err
+            })
+        })
+}
+
 module.exports = {
     createPost,
     getPosts,
     getPostById,
-    removePostById
+    removePostById,
+    upVotePost
 }
