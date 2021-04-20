@@ -79,9 +79,9 @@ export default function Allforum() {
                     </div>
                     <div className={style.card}>
                         <div className={style.iconContainer}>
-                            {/* <i className="far fa-comments"></i> */}
+                            <div className={style.icondiv}>
                             <img className={style.lefticon} src={leftmsgicon} />
-
+                            </div>
                         </div>
                         <div className={style.forum}>
                             <div className={style.posttitle}>
@@ -99,6 +99,7 @@ export default function Allforum() {
                         <div className={style.posts}> 30</div>
                         <div className={style.fresshness}> 6 days 15 hour </div>
                     </div>
+
 
                 </div>
 
