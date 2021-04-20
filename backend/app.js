@@ -7,6 +7,8 @@ const app = express()
 const userRoutes = require('./routes/users')
 const forumRoutes = require('./routes/forums')
 const postsRoutes = require('./routes/posts')
+const investmentClubRoutes = require('./routes/investmentClub')
+const commentRoutes = require('./routes/comments')
 
 
 app.use(morgan('dev'));
@@ -42,7 +44,9 @@ app.use((req,res,next) => {
 
 app.use('/users', userRoutes);
 app.use('/forums', forumRoutes);
+app.use('/investment-club', investmentClubRoutes);
 app.use('/posts', postsRoutes);
+app.use('/comments', commentRoutes);
 
 
 // for routes not found

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Post = require('../models/post');
+const Forum = require('../models/forum');
 
 
 const createPost = (req, res, next) => {
@@ -9,15 +10,28 @@ const createPost = (req, res, next) => {
         _id : mongoose.Types.ObjectId(),
         title : postDetails.title,
         text : postDetails.text,
-        posted_user : postDetails.userId,
-        created_at: new Date(postDetails.createdAt),
+        posted_user_id : postDetails.userId,
+        forum_id: postDetails.forumId,
+        created_at: new Date(),
     })
 
     post.save()
         .then(post => {
-            res.status(200).json({
-                message : "post is created"
-            })
+            Forum.findOneAndUpdate(
+                {_id : postDetails.forumId},
+                {
+                    $push : { 'posts' : post._id },
+                }).exec()
+                .then(response => {
+                    res.status(200).json({
+                        message : "post is created"
+                    })
+                })
+                .catch(err => {
+                    res.status(500).json({
+                        error : err
+                    })
+                })
         })
         .catch(err => {
             res.status(500).json({

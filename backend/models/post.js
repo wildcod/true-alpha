@@ -19,7 +19,7 @@ const postSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
-    posted_user : {
+    posted_user_id : {
         type : mongoose.Schema.Types.ObjectId,
         ref : 'User',
     },

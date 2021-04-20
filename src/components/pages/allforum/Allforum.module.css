@@ -1,14 +1,14 @@
 .allforumcontainer{
     display: flex;
-   
+    padding: 4%;
 }
 
 .topicscontainer{
-    width: 70%;
-   margin: 1rem auto;
+    flex: 4;
+    margin: 1rem auto;
 }
 .recenttopics{
-   width:30%;
+  flex: 1;
    margin: 2rem;
    padding: 3rem;
    border-radius: 1em;
@@ -72,7 +72,10 @@
 }
 .formcontentpara{
     font-size: 14px;
-
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .posttitle{
     font-weight: 500;

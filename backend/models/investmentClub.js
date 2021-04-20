@@ -7,11 +7,11 @@ const investmentClubSchema = mongoose.Schema({
         type : String,
         required : true
     },
-    club_name : {
+    fund_name : {
         type : String,
         required : true
     },
-    club_returns : {
+    fund_returns : {
       type: Number,
       required: true
     },
@@ -23,9 +23,12 @@ const investmentClubSchema = mongoose.Schema({
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Forum',
     }],
+    users : [{
+        type: mongoose.Schema.Types.ObjectId
+    }],
     admin_id : [{
         type: mongoose.Schema.Types.ObjectId
     }]
 })
 
-module.exports = mongoose.model('InvestmentClubSchema' ,investmentClubSchema)
+module.exports = mongoose.model('InvestmentClub' ,investmentClubSchema)

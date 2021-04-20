@@ -7,9 +7,10 @@ const createComment = (req, res, next) => {
 
     const comment = new Comment({
         _id : mongoose.Types.ObjectId(),
+        title: commentDetails.title,
         text : commentDetails.text,
-        posted_user : commentDetails.userId,
-        created_at: new Date(commentDetails.createdAt),
+        posted_user_id : commentDetails.userId,
+        created_at: new Date(),
         post_id: commentDetails.postId,
     });
 
