@@ -19,6 +19,9 @@
 .upperdetails{
     text-align: center;
 }
+.upperdetails > h3{
+    text-transform: capitalize;
+}
 .upperdetails img{
     display: flex;
     align-items: center;
@@ -34,6 +37,7 @@
      border: none;
      border-radius: 3px;
      margin: 3px;
+    cursor: pointer;
 }
 
 

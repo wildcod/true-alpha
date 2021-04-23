@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
 import style from './Portfolio.module.css'
 
-
-
 export default function Portfolio() {
     const [portfolio, setportfolio] = useState([
         {name:"Calmaine Food Inc ", ticker:"CALM" , returnPerc:25},
@@ -13,7 +11,6 @@ export default function Portfolio() {
         {name:"Calmaine Food Inc ", ticker:"CALM" , returnPerc:25},
         {name:"Calmaine Food Inc ", ticker:"CALM" , returnPerc:25},
         {name:"Calmaine Food Inc ", ticker:"CALM" , returnPerc:25},
-
     ])
     return (
         <div className={style.folio}>
