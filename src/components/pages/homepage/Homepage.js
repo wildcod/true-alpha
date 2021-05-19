@@ -13,7 +13,7 @@ function Homepage(props) {
         let posts = [];
         const clubData = await axios.get(`/investment-club/${props.userId}`);
         console.log(clubData);
-        if(clubData && clubData.status === 200){
+        if(clubData.status === 200 && clubData.data && clubData.data.length){
             const forum = await axios.get(`/forums/${clubData?.data?.clubs[0]?.forum_id}`);
             if(forum && forum.status === 200){
                 setPosts(forum.data.forum.posts)
@@ -74,6 +74,10 @@ function Homepage(props) {
                                             })
                                         }
                                     </table>
+                                    {
+                                        !investmentClubs || !investmentClubs.length ?
+                                            <p style={{textAlign: 'center'}}>No Data</p> : null
+                                    }
 
                                 </div>
                             </div>

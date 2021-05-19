@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const signup = (req, res, next) => {
 
     bcrypt.hash(req.body.password, 10, function(err, hash) {
-
+    console.log('Log', req.body)
         if(err){
             return res.status(500).json({
                 error : err
